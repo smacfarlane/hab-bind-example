@@ -1,0 +1,6 @@
+#!/bin/bash
+
+hab pkg build habitat/haproxy
+hab pkg build habitat/nginx
+
+kitchen converge

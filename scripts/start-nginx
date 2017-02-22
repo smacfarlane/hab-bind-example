@@ -1,0 +1,6 @@
+#!/bin/bash
+
+HAB_ORIGIN=smacfarlane
+
+sudo hab sup start ${HAB_ORIGIN}/nginx --peer localhost --listen-gossip 0.0.0.0:9639 --listen-http 0.0.0.0:9632
+                                                      

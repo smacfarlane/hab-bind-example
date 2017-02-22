@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HAB_ORIGIN=smacfarlane
+
+sudo hab sup start ${HAB_ORIGIN}/haproxy --bind backend:nginx.default 

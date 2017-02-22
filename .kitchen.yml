@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+  network: 
+  - ["private_network", { ip: 10.10.10.10 }]
+  synced_folders:
+  - [".", "/vagrant"]
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
+    provisioner: 
+      script: scripts/hab-bootstrap
+
